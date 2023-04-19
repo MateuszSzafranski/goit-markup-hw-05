@@ -34,6 +34,22 @@ body {
     justify-content: center;
 }
 
+.active-line::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    margin-top: 45px;
+    position: absolute;
+    border-bottom: solid 4px var(--brand-color-blue);
+    border-radius: 2px;
+}
+
+.active-line {
+    color: var(--brand-color-blue);
+    position: relative;
+}
+
 .header-container {
     display: flex;
     align-items: center;
