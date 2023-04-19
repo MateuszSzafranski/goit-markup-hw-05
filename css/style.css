@@ -90,6 +90,29 @@ body {
     gap: 30px;
 }
 
+.img-with-label {
+    position: relative;
+    display: inline-flex;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--brand-color-white);
+    bottom: 0;
+    padding: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
 .container-section4 {
     list-style: none;
     display: flex;
