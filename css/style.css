@@ -98,9 +98,21 @@ body {
 
 .close-modal-button {
     position: absolute;
-    right: 8px;
     top: 8px;
+    right: 8px;
     fill: var(--brand-color-black);
+    display: flex;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    background: var(--brand-color-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-modal-button:hover,
+.close-modal-button:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
