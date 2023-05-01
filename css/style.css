@@ -84,7 +84,7 @@ body {
     background: rgba(0, 0, 0, 0.2);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: var(--background-page-color);
+    transition-property: opacity, visibility;
 }
 
 .modal {
@@ -96,6 +96,8 @@ body {
     background: var(--brand-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -110,13 +112,6 @@ body {
     cursor: pointer;
     background: var(--brand-color-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition-property: opacity, visibility;
-}
-
-.close-modal-button:hover,
-.close-modal-button:focus {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -189,19 +184,21 @@ body {
     gap: 30px;
 }
 
+.card-portfolio {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .card-portfolio:hover,
 .card-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);;
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card {
     width: 370px;
-    transition-property: opacity, visibility;
 }
 
 .img-container {
@@ -225,6 +222,7 @@ body {
     transform: translateY(100%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
 }
 
 .card-description-text {
@@ -304,6 +302,8 @@ body {
     justify-content: center;
     align-items: center;
     transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-section-4-list:hover,
@@ -312,8 +312,6 @@ body {
     background-color: var(--brand-color-blue);
     border-radius: 50%;
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-section-5 {
@@ -333,6 +331,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
 }
 
@@ -341,8 +341,6 @@ body {
     fill: var(--brand-color-blue);
     cursor: pointer;
     border: 1px solid var(--brand-color-blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu {
@@ -397,7 +395,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    fill: var(--brand-color-text-grey);    
+    fill: var(--brand-color-text-grey);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-tel{
@@ -405,6 +405,8 @@ body {
     align-items: center;
     gap: 10px;
     fill: var(--brand-color-text-grey);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-mail:hover,
@@ -413,8 +415,6 @@ body {
 .icons-tel:focus {
     fill: var(--brand-color-blue);
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-lorem {
@@ -449,6 +449,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
 }
 
@@ -456,8 +458,6 @@ body {
 .icons-footer-list:focus {
     background: var(--brand-color-blue);
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact {
@@ -468,6 +468,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--brand-color-text-grey);
     margin-right: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
 }
 
@@ -487,8 +489,6 @@ body {
 .contact:hover,
 .contact:focus {
     color: var(--brand-color-blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation {
@@ -514,14 +514,14 @@ body {
     letter-spacing: 0.02em;
     color: var(--brand-color-black);
     margin-right: 46px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
 }    
 
 .link-nav:hover,
 .link-nav:focus {
     color: var(--brand-color-blue);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-nav-2 {
@@ -556,6 +556,8 @@ body {
     height: 38px;
     border-radius: 4px;
     margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, background-color;
 }
 
@@ -584,13 +586,16 @@ body {
     background-color: var(--brand-color-blue);
 }
 
+.button-main {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .button-main:hover,
 .pointer:focus {
     color: var(--brand-color-white);
     background-color: var(--brand-color-blue);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
